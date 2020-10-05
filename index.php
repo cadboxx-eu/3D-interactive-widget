@@ -37,13 +37,13 @@
 
   <body>
 
-    <a-scene shadow="type: pcfsoft">
+    <a-scene shadow="type: pcfsoft" background="color: white" loading-screen="dotsColor: #ff3300; backgroundColor: white">
 
 
       <!-- All Images -->
       <a-assets>
-        <a-asset-item id="tree-obj" src="/src/Tshirt_obj.obj"></a-asset-item>
-        <a-asset-item id="tree-mtl" src="/src/TShirt.mtl"></a-asset-item>
+        <a-asset-item id="tree-obj" src="src/Tshirt_obj.obj"></a-asset-item>
+        <a-asset-item id="tree-mtl" src="src/TShirt.mtl"></a-asset-item>
 
         <img id="img_sky" src="src/bgwhite2.jpg?v=<?=$globalVersion?>">
 
@@ -71,7 +71,7 @@
 
       <a-entity
         id="tshirty"
-        obj-model="obj: /src/Tshirt_obj.obj"
+        obj-model="obj: src/Tshirt_obj.obj"
         scale="0.05 0.05 0.05"
         position="-0.2 -4 0"
         rotation="0 90 0"
