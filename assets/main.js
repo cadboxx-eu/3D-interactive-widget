@@ -211,23 +211,49 @@ var aframeInteractions = (function(){
    */
   var tshirtchanger = function(){
 
-    document.querySelectorAll('.switcher__button').forEach(item => {
+    document.querySelectorAll('.material_switcher').forEach(item => {
       item.addEventListener('click', event => {
 
         // change active class
-        document.querySelector(".switcher__button.this--active").classList.remove("this--active");
+        document.querySelector(".material_switcher.this--active").classList.remove("this--active");
         item.classList.add("this--active");
 
         // determine which outfit was selected
         var outfit = item.getAttribute("data-outfitid");
         console.log(outfit);
 
-        // change the outfit :D
-
+        // change the outfit(s) :D
         document.getElementById("tshirty").setAttribute("material", "src: #"+outfit);
+        document.getElementById("tshirtf").setAttribute("material", "src: #"+outfit);
 
       })
-    })
+    });
+
+
+    document.querySelectorAll('.type_switcher').forEach(item => {
+      item.addEventListener('click', event => {
+
+        // change active class
+        document.querySelector(".type_switcher.this--active").classList.remove("this--active");
+        item.classList.add("this--active");
+
+        // determine which outfit was selected
+        var showbodytype = item.getAttribute("data-showbodytype");
+        console.log(showbodytype);
+
+        // change the Body Type!!! :D'
+        if(showbodytype == 'tshirty'){
+          document.getElementById("tshirty").setAttribute("scale", "0.1 0.1 0.1");
+          document.getElementById("tshirtf").setAttribute("scale", "0 0 0");
+        }else{
+          document.getElementById("tshirtf").setAttribute("scale", "0.1 0.1 0.1");
+          document.getElementById("tshirty").setAttribute("scale", "0 0 0");
+        }
+
+      })
+    });
+
+
   };
 
 

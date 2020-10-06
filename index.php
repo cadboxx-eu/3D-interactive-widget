@@ -43,14 +43,17 @@
       <!-- All Images -->
       <a-assets>
         <a-asset-item id="tree-obj" src="src/Tshirt_obj.obj"></a-asset-item>
+        <a-asset-item id="tree-obj" src="src/male.obj"></a-asset-item>
+        <a-asset-item id="tree-obj" src="src/female.obj"></a-asset-item>
         <a-asset-item id="tree-mtl" src="src/TShirt.mtl"></a-asset-item>
 
         <img id="img_sky" src="src/bgwhite2.jpg?v=<?=$globalVersion?>">
 
-        <img id="tshirt1" src="src/PO_066.jpg?v=<?=$globalVersion?>">
-        <img id="tshirt2" src="src/PO_072.jpg?v=<?=$globalVersion?>">
-        <img id="tshirt3" src="src/scarf.jpg?v=<?=$globalVersion?>">
-
+        <img id="tshirt1" src="src/bunt.jpeg?v=<?=$globalVersion?>">
+        <img id="tshirt2" src="src/art.jpeg?v=<?=$globalVersion?>">
+        <img id="tshirt3" src="src/pattern.jpeg?v=<?=$globalVersion?>">
+        <img id="tshirt4" src="src/rainbow.jpeg?v=<?=$globalVersion?>">
+        <img id="tshirt5" src="src/bismillah.jpg?v=<?=$globalVersion?>">
 
         <img id="img_circle0" src="src/circle0.png?v=<?=$globalVersion?>">
         <img id="img_circle1" src="src/circle1.png?v=<?=$globalVersion?>">
@@ -65,15 +68,24 @@
 
 
       <a-entity id='cameraWrapper' rotation="0 90 0" position="-0.12365 0 0.72366" >
-        <a-entity  camera look-controls orbit-controls="target: 0 0 0; autoRotate: true; autoRotateSpeed: 0.05; minDistance: 5; maxDistance: 25; initialPosition: 0 2 6"></a-entity>
+        <a-entity  camera look-controls orbit-controls="target: 0 0 0; autoRotate: true; autoRotateSpeed: 0.05; minDistance: 5; maxDistance: 25; initialPosition: 2 2 6"></a-entity>
       </a-entity>
 
 
       <a-entity
         id="tshirty"
-        obj-model="obj: src/Tshirt_obj.obj"
-        scale="0.05 0.05 0.05"
-        position="-0.2 -4 0"
+        obj-model="obj: src/male.obj"
+        scale="0 0 0"
+        position="-0.2 -3.05 0"
+        rotation="0 90 0"
+        material="src: #tshirt1">
+      </a-entity>
+
+      <a-entity
+        id="tshirtf"
+        obj-model="obj: src/female.obj"
+        scale="0.1 0.1 0.1"
+        position="-0.2 -2.5 -6"
         rotation="0 90 0"
         material="src: #tshirt1">
       </a-entity>
@@ -107,10 +119,19 @@
 
 
     <div class="switcher">
-      <button id="testaa" class="switcher__button this--active" data-outfitid="tshirt1">Outfit 1</button>
-      <button class="switcher__button" data-outfitid="tshirt2">Outfit 2</button>
-      <button class="switcher__button" data-outfitid="tshirt3">Outfit 3</button>
+      Body Type
+      <button class="switcher__button type_switcher this--active" data-showbodytype="tshirtf">Female</button>
+      <button class="switcher__button type_switcher" data-showbodytype="tshirty">Male</button>
+      <br>
+      <br>
+      Design
+      <button class="switcher__button material_switcher this--active" data-outfitid="tshirt1">Geometric</button>
+      <button class="switcher__button material_switcher" data-outfitid="tshirt2">AArt</button>
+      <button class="switcher__button material_switcher" data-outfitid="tshirt3">Abstract</button>
+      <button class="switcher__button material_switcher" data-outfitid="tshirt4">Rainbow</button>
+      <button class="switcher__button material_switcher" data-outfitid="tshirt5">Calligraphy</button>
     </div>
+
 
     <script>
       aframeInteractions.init();
