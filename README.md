@@ -1,5 +1,7 @@
 # 3D Interactive T-Shirt Widget
 
+![3D Interactive T-Shirt Demo](https://raw.githubusercontent.com/justMoritz/images/master/tshirtlarge.gif)
+
 A cool 3D interactive T-Shirt widget built with with the JavaScript aframe library, using object, textures, dynamic updates!
 Built as a proof of concept, this project uses the aframe javascript library to create an interactive room, a collection of `.obj` elements textured dynimcally on the fly. Also using many custom *components* and *animations*!
 
