@@ -67,7 +67,7 @@
         scale="0 0 0"
         position="-0.2 -3.05 0"
         rotation="0 90 0"
-        material="src: #tshirt1">
+        material="src: #print1">
       </a-entity>
 
       <a-entity
@@ -76,7 +76,7 @@
         scale="0.1 0.1 0.1"
         position="-0.2 -2.5 -6"
         rotation="0 90 0"
-        material="src: #tshirt1">
+        material="src: #print1">
       </a-entity>
 
 
@@ -109,7 +109,7 @@
       <button class="switcher__button material_switcher" data-outfitid="print2">Paint</button>
       <button class="switcher__button material_switcher" data-outfitid="print3">Abstract</button>
       <button class="switcher__button material_switcher" data-outfitid="print4">Rainbow</button>
-      <button class="switcher__button material_switcher" data-outfitid="print5">Calligraphy</button>
+      <!-- <button class="switcher__button material_switcher" data-outfitid="print5">Calligraphy</button> -->
     </div>
 
 
