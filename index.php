@@ -3,13 +3,15 @@
 
   $globalVersion = '1.6.3';
 
-  // Copyright Moritz Zimmer, 2020
-
 ?>
 
 <!DOCTYPE html>
 <html>
   <head>
+    <!--
+      ﷽
+      Copyright Moritz Zimmer, 2020
+    -->
     <title>Fashion Show at Lunch</title>
     <meta name="description" content="An awesome test for Objects and Materials in Aframe">
     <meta charset="utf-8">
