@@ -56,17 +56,33 @@ body{
 @media(max-width: 640px){
 
   .switcher{
-    bottom: 35px;
+    bottom: 5px;
     left: 0;
+  }
+
+  .switcher__container{
+    margin-top: 10px;
   }
 
   .switcher__headline{
     text-align: center;
-    display: block;
+    display: none;
   }
 
   .switcher__button{
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px;
+  }
+
+  .switcher{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .switcher__container:first-child{
+    order: 2;
+  }
+  .switcher__container:last-child{
+    order: 1;
   }
 }

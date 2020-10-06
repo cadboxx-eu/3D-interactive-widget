@@ -1,7 +1,7 @@
 <?php
   // ﷽
 
-  $globalVersion = '1.6.0';
+  $globalVersion = '1.6.3';
 
   // Copyright Moritz Zimmer, 2020
 
