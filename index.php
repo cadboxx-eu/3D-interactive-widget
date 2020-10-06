@@ -1,15 +1,17 @@
 <?php
-  // بسملة‎
+  // ﷽
 
   $globalVersion = '1.6.0';
+
+  // Copyright Moritz Zimmer, 2020
 
 ?>
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Virtual Object Test by Moritz Zimmer</title>
-    <meta name="description" content="Mouse Click Example - A-Frame">
+    <title>Fashion Show at Lunch</title>
+    <meta name="description" content="An awesome test for Objects and Materials in Aframe">
     <meta charset="utf-8">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
