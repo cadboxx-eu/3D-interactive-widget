@@ -101,18 +101,23 @@
 
     <!-- UI Elements -->
     <div class="switcher">
-      Body Type
-      <button class="switcher__button type_switcher this--active" data-showbodytype="tshirtf">Female</button>
-      <button class="switcher__button type_switcher" data-showbodytype="tshirty">Male</button>
-      <br>
-      <br>
-      Design
-      <button class="switcher__button material_switcher this--active" data-outfitid="print1">Geometric</button>
-      <button class="switcher__button material_switcher" data-outfitid="print2">Paint</button>
-      <button class="switcher__button material_switcher" data-outfitid="print3">Abstract</button>
-      <button class="switcher__button material_switcher" data-outfitid="print4">Rainbow</button>
-      <!-- <button class="switcher__button material_switcher" data-outfitid="print5">Calligraphy</button> -->
+      <div class="switcher__container">
+        <div class="switcher__headline">Body Type</div>
+        <button class="switcher__button type_switcher this--active" data-showbodytype="tshirtf">Female</button>
+        <button class="switcher__button type_switcher" data-showbodytype="tshirty">Male</button>
+      </div>
+
+      <div class="switcher__container">
+        <div class="switcher__headline">Design</div>
+        <button class="switcher__button material_switcher this--active" data-outfitid="print1">Geometric</button>
+        <button class="switcher__button material_switcher" data-outfitid="print2">Paint</button>
+        <button class="switcher__button material_switcher" data-outfitid="print3">Abstract</button>
+        <button class="switcher__button material_switcher" data-outfitid="print4">Rainbow</button>
+        <!-- <button class="switcher__button material_switcher" data-outfitid="print5">Calligraphy</button> -->
+      </div>
     </div>
+
+    <span class="copyright-information">by Moritz Zimmer, 2020</span>
 
 
     <!-- Execute scripts after everything is loaded :) -->
