@@ -1,7 +1,7 @@
 <?php
   // ﷽
 
-  $globalVersion = '1.6.3';
+  $globalVersion = '1.7.2';
 
 ?>
 
@@ -9,8 +9,7 @@
 <html>
   <head>
     <!--
-      ﷽
-      Copyright Moritz Zimmer, 2020
+      Copyright Moritz Zimmer, 2020-2022
     -->
     <title>Fashion Show at Lunch</title>
     <meta name="description" content="An awesome test for Objects and Materials in Aframe">
@@ -45,8 +44,8 @@
 
       <!-- All Images -->
       <a-assets>
-        <a-asset-item id="tree-obj" src="src/male.obj"></a-asset-item>
-        <a-asset-item id="tree-obj" src="src/female.obj"></a-asset-item>
+        <a-asset-item id="tree-obj" src="src/straight.obj"></a-asset-item>
+        <a-asset-item id="tree-obj" src="src/fitted.obj"></a-asset-item>
 
         <img id="print1" src="src/bunt.jpeg?v=<?=$globalVersion?>">
         <img id="print2" src="src/art.jpeg?v=<?=$globalVersion?>">
@@ -67,7 +66,7 @@
       <!-- T-Shirt Models -->
       <a-entity
         id="tshirty"
-        obj-model="obj: src/male.obj"
+        obj-model="obj: src/straight.obj"
         scale="0 0 0"
         position="-0.2 -3.05 0"
         rotation="0 90 0"
@@ -76,7 +75,7 @@
 
       <a-entity
         id="tshirtf"
-        obj-model="obj: src/female.obj"
+        obj-model="obj: src/fitted.obj"
         scale="0.1 0.1 0.1"
         position="-0.2 -2.5 -6"
         rotation="0 90 0"
@@ -92,7 +91,7 @@
       <a-entity light="intensity: 0.5; type: ambient"></a-entity>
 
 
-      <!-- Goodbye, Friend :'(' -->
+      <!-- Good old friend :) -->
       <a-sphere position="6.96188 -0.37915 -9.11629" id="pizzaSphere" radius="1.25" color="#EF2D5E" shadow="" material="opacity: 0.6" geometry="radius: 0.5" animation="property: position; to: 5 -4.6 2; dur: 5500; dir: alternate; easing: linear; loop: true"></a-sphere>
 
 
@@ -104,9 +103,9 @@
     <!-- UI Elements -->
     <div class="switcher">
       <div class="switcher__container">
-        <div class="switcher__headline">Body Type</div>
-        <button class="switcher__button type_switcher this--active" data-showbodytype="tshirtf">Female</button>
-        <button class="switcher__button type_switcher" data-showbodytype="tshirty">Male</button>
+        <div class="switcher__headline">Shirt Fit</div>
+        <button class="switcher__button type_switcher this--active" data-shotfittype="tshirtf">Fitted</button>
+        <button class="switcher__button type_switcher" data-shotfittype="tshirty">Straight</button>
       </div>
 
       <div class="switcher__container">
@@ -119,7 +118,7 @@
       </div>
     </div>
 
-    <span class="copyright-information">by Moritz Zimmer, 2020</span>
+    <span class="copyright-information">by Moritz Zimmer, 2020-2022</span>
 
 
     <!-- Execute scripts after everything is loaded :) -->

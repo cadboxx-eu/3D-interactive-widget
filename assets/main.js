@@ -238,11 +238,11 @@ var aframeInteractions = (function(){
         item.classList.add("this--active");
 
         // determine which outfit was selected
-        var showbodytype = item.getAttribute("data-showbodytype");
-        console.log(showbodytype);
+        var shotfittype = item.getAttribute("data-shotfittype");
+        // console.log(shotfittype);
 
         // change the Body Type!!! :D'
-        if(showbodytype == 'tshirty'){
+        if(shotfittype == 'tshirty'){
           document.getElementById("tshirty").setAttribute("scale", "0.1 0.1 0.1");
           document.getElementById("tshirtf").setAttribute("scale", "0 0 0");
         }else{
