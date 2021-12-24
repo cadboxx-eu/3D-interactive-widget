@@ -47,9 +47,9 @@
         <a-asset-item id="tree-obj" src="src/straight.obj"></a-asset-item>
         <a-asset-item id="tree-obj" src="src/fitted.obj"></a-asset-item>
 
-        <img id="print1" src="src/bunt.jpeg?v=<?=$globalVersion?>">
+        <img id="print1" src="src/pattern.jpeg?v=<?=$globalVersion?>">
         <img id="print2" src="src/art.jpeg?v=<?=$globalVersion?>">
-        <img id="print3" src="src/pattern.jpeg?v=<?=$globalVersion?>">
+        <img id="print3" src="src/bunt.jpeg?v=<?=$globalVersion?>">
         <img id="print4" src="src/rainbow.jpeg?v=<?=$globalVersion?>">
         <img id="print5" src="src/bismillah.jpg?v=<?=$globalVersion?>">
 
@@ -110,9 +110,9 @@
 
       <div class="switcher__container">
         <div class="switcher__headline">Design</div>
-        <button class="switcher__button material_switcher this--active" data-outfitid="print1">Geometric</button>
+        <button class="switcher__button material_switcher this--active" data-outfitid="print1">Abstract</button>
         <button class="switcher__button material_switcher" data-outfitid="print2">Paint</button>
-        <button class="switcher__button material_switcher" data-outfitid="print3">Abstract</button>
+        <button class="switcher__button material_switcher" data-outfitid="print3">Geometric</button>
         <button class="switcher__button material_switcher" data-outfitid="print4">Rainbow</button>
         <!-- <button class="switcher__button material_switcher" data-outfitid="print5">Calligraphy</button> -->
       </div>
