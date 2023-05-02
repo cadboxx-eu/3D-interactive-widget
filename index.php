@@ -52,7 +52,11 @@
         <img id="print3" src="src/bunt.jpeg?v=<?=$globalVersion?>">
         <img id="print4" src="src/rainbow.jpeg?v=<?=$globalVersion?>">
         <img id="print5" src="src/bismillah.jpg?v=<?=$globalVersion?>">
-
+        <img id="print6" src="src/pattern.jpeg?v=<?=$globalVersion?>">
+        <img id="print7" src="src/art.jpeg?v=<?=$globalVersion?>">
+        <img id="print8" src="src/bunt.jpeg?v=<?=$globalVersion?>">
+        <img id="print9" src="src/rainbow.jpeg?v=<?=$globalVersion?>">
+        <img id="print10" src="src/bismillah.jpg?v=<?=$globalVersion?>">
         <img id="img_sky" src="src/bgwhite2.jpg?v=<?=$globalVersion?>">
       </a-assets>
 
@@ -114,6 +118,16 @@
         <button class="switcher__button material_switcher" data-outfitid="print2">Paint</button>
         <button class="switcher__button material_switcher" data-outfitid="print3">Geometric</button>
         <button class="switcher__button material_switcher" data-outfitid="print4">Rainbow</button>
+                
+        <button class="switcher__button material_switcher" data-outfitid="print5">Paint</button>
+        <button class="switcher__button material_switcher" data-outfitid="print6">Geometric</button>
+        <button class="switcher__button material_switcher" data-outfitid="print7">Rainbow</button>
+        <button class="switcher__button material_switcher" data-outfitid="print8">Paint</button>
+        <button class="switcher__button material_switcher" data-outfitid="print9">Geometric</button>
+        <button class="switcher__button material_switcher" data-outfitid="print10">Rainbow</button>
+        
+        
+        
         <!-- <button class="switcher__button material_switcher" data-outfitid="print5">Calligraphy</button> -->
       </div>
     </div>
