@@ -64,7 +64,7 @@
       <!-- T-Shirt Models -->
       <a-entity
         id="tshirty"
-        obj-model="obj: src/model.obj"
+        obj-model="obj: src/straight.obj"
         scale="1 1 1"
         position="-0.2 -3.05 0"
         rotation="0 90 0"
@@ -73,7 +73,7 @@
 
       <a-entity
         id="tshirtf"
-        obj-model="obj: src/model.obj"
+        obj-model="obj: src/fitted.obj"
         scale="1 1 1"
         position="-0.2 -2.5 -6"
         rotation="0 90 0"
@@ -94,9 +94,8 @@
 
 
       <!-- Background Image -->
-      <a-sky id="mainsky" src="#img_sky"></a-sky>
-    </a-scene>
-
+       <img id="img_sky" src="src/bgwhite2.jpg?v=<?=$globalVersion?>">
+      </a-assets>
 
     <!-- UI Elements -->
     <div class="switcher">
